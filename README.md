@@ -11,3 +11,9 @@ GitHub applies these to every repo in the org that doesn't have its own
 
 New issues created from a template are added to the
 [org project board](https://github.com/orgs/MealMaestro/projects/1) automatically.
+
+## Pull requests
+
+[`pull_request_template.md`](.github/pull_request_template.md) is the
+default body for every new PR. It's written for feature PRs: linked issue,
+acceptance-criteria checklist, test steps and a review checklist.
