@@ -1,2 +1,19 @@
 # .github
-Org-wide defaults for MealMaestro repos (issue templates)
+
+Org-wide defaults for [MealMaestro](https://github.com/MealMaestro) repos.
+
+GitHub applies these to every repo in the org that doesn't have its own
+`.github/ISSUE_TEMPLATE/` folder, so templates are maintained here once.
+
+| Template | Label | Use for |
+|---|---|---|
+| [Feature](.github/ISSUE_TEMPLATE/feature.yml) | `feature` | New user-facing capability, written as a user story + acceptance criteria |
+
+New issues created from a template are added to the
+[org project board](https://github.com/orgs/MealMaestro/projects/1) automatically.
+
+## Pull requests
+
+[`pull_request_template.md`](.github/pull_request_template.md) is the
+default body for every new PR. It's written for feature PRs: linked issue,
+acceptance-criteria checklist, test steps and a review checklist.

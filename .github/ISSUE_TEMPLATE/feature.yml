@@ -1,0 +1,80 @@
+name: Feature
+description: A new user-facing capability, written as a user story with acceptance criteria.
+labels: ["feature"]
+projects: ["MealMaestro/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One ticket = one shippable slice of work in **this** repo. If the work spans `api` and `mobile`, raise a ticket in each and link them under *Dependencies*.
+
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User story
+      description: Who wants this, what they want, and why.
+      placeholder: As a <type of user>, I want <goal>, so that <benefit>.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Backend
+        - Mobile
+        - Infrastructure
+        - Cross-cutting
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Background, constraints, or design notes a reviewer needs. Link to `docs/architecture` where relevant.
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What will be built (endpoints, screens, tables, resources).
+      placeholder: |
+        - `POST /recipes` — ...
+        - Recipe form screen — ...
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: What this ticket deliberately does not cover, so it doesn't creep.
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Testable conditions that must all be true to close this ticket. Given/When/Then works well for behaviour.
+      value: |
+        - [ ] Given ..., when ..., then ...
+        - [ ] Tests cover the above
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Tickets that must land first, and related tickets in other repos.
+      placeholder: |
+        Depends on: MealMaestro/api#
+        Related: MealMaestro/mobile#
+
+  - type: input
+    id: epic
+    attributes:
+      label: Parent epic
+      description: The epic issue in `docs` this belongs to.
+      placeholder: MealMaestro/docs#2
+    validations:
+      required: true
